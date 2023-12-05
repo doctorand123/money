@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$MONEY | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Crimson+Text&family=Montserrat:ital,wght@0,500;0,600;1,100&family=Nova+Square&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/Icon.png"/>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <div id="content">
+        <div id="links">
+            <a href="#">Solscan</a>
+            <a href="#">Rug Checker</a>
+            <a href="#">BirdEye</a>
+        </div>
+        <h1>$MONEY</h1>
+        <h2>MYRO OTTER NOODLE EXPLORER YEN 8</h2>
+        <p>
+            Raj sent Myro on a mission, to go to china, eat noodles and come back with generational wealth.
+        </p>
+        <div id="socialButtons">
+            <a href='https://twitter.com/MONEYonSol'><button><i class="fab fa-twitter"></i></button></a>
+            <a href='#'><button id="kissYourselfButton">$MONEY HERE</button></a>
+            <a href='https://t.me/moneyonsol'><button><i class="fab fa-telegram"></i></button></a>
+        </div>
+    </div>
+
+    <script>
+        // Set up canvas for dynamic structure
+        const canvas = document.getElementById('background');
+        const ctx = canvas.getContext('2d');
+
+        // Set background GIF
+        canvas.style.backgroundImage = 'url("Background.gif")';
+        canvas.style.backgroundSize = 'cover';
+        canvas.style.backgroundPosition = 'center top'; // Adjust this for positioning
+
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Create dynamic structure (you can customize this)
+
+
+
+        // Update canvas on window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            drawDynamicStructure();
+        });
+
+        // Initialize dynamic structure
+        drawDynamicStructure();
+    </script>
+</body>
+</html>
